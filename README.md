@@ -2,6 +2,9 @@
 
 O Escudo d'Água implementa, em Python puro, um compilador didático para uma DSL de monitoramento de chuvas e prevenção de alagamentos. O pipeline é explícito: **Scanner → Parser → Interpretador**. A pasta `web/` expõe o mesmo pipeline em uma bancada visual no navegador.
 
+**Site:** [projeto-escudo-dagua.vercel.app](https://projeto-escudo-dagua.vercel.app/)  
+**Repositório:** [Tema Integrador VIII — Projeto de Linguagens](https://github.com/tielmuzi/Tema-Integrador-VIII-Projeto-de-Linguagens.git)
+
 ## Alinhamento aos Objetivos de Desenvolvimento Sustentável
 
 O projeto tem como referência principal o **ODS 10 — Redução das Desigualdades**, especialmente a meta **10.2**, de promover a inclusão social de pessoas em situação de vulnerabilidade, e a meta **10.3**, de garantir igualdade de oportunidades e reduzir desigualdades de resultados. No contexto do Escudo d'Água, isso significa orientar o desenvolvimento para tornar informações sobre riscos climáticos mais compreensíveis e reduzir barreiras comunicacionais.
@@ -13,6 +16,7 @@ Na versão atual, a pesquisa comunitária reúne evidências sobre impactos e pr
 ## Tecnologias utilizadas
 
 - **Python 3.10+** e biblioteca padrão para o compilador (Scanner, Parser e Interpretador), a CLI, os scripts de dados e o servidor HTTP local. Não há dependências externas de Python para executar o projeto.
+- **Vercel Functions com Python** para publicar a aplicação; `server.py` exporta o handler HTTP e `vercel.json` encaminha as rotas para ele.
 - **HTML5, CSS3 e JavaScript puro** para a interface web responsiva, sem framework ou pacote de frontend.
 - **HTTP e JSON** na API local que conecta a interface ao servidor Python.
 - **CSV e JSON** para importar respostas do formulário e armazenar dados e resumos.
@@ -101,7 +105,7 @@ done
 
 ## Versão web
 
-A interface web possui visão geral, pesquisa comunitária, monitoramento, classificação de risco, compilador DSL e relatórios. A pesquisa usa os indicadores agregados do CSV real; pontos, medições e alertas são demonstrativos, aparecem identificados como simulados e ficam persistidos em `dados/monitoramento.json`.
+A interface web possui visão geral, pesquisa comunitária, monitoramento, classificação de risco, compilador DSL e relatórios. A pesquisa usa os indicadores agregados do CSV real; pontos, medições e alertas são demonstrativos e aparecem identificados como simulados. Na execução local, o estado do monitoramento fica em `dados/monitoramento.json`.
 
 O monitoramento permite cadastrar e excluir pontos, registrar medições, simular uma enchente e consultar o histórico. As faixas de risco são editáveis e o simulador recalcula o resultado durante a edição. O compilador oferece validação sem execução, interpretação, tokens, AST e erros com trecho e marcador de coluna. Relatórios exportam dados consolidados em CSV e podem ser impressos ou salvos como PDF pelo navegador.
 
@@ -110,6 +114,10 @@ python server.py
 ```
 
 Abra `http://localhost:3000`. Além do endpoint `POST /api/compile`, a API local oferece `/api/dashboard`, `/api/monitoring`, `/api/points`, `/api/measurements`, `/api/simulate` e `/api/rules` para a interface operacional. O arquivo de telemetria inicial é criado automaticamente quando o servidor inicia pela primeira vez.
+
+### Deploy no Vercel
+
+O arquivo `vercel.json` configura `server.py` com o runtime `@vercel/python` e encaminha as requisições ao handler `handler`, que serve a interface e a API. Para publicar, mantenha a raiz do repositório como **Root Directory** no projeto Vercel e envie `server.py` e `vercel.json` para a branch conectada ao deploy. O estado em `dados/monitoramento.json` é local; funções serverless não oferecem persistência durável nesse arquivo, então dados criados no site publicado podem não permanecer entre execuções. Para persistência em produção, conecte um banco de dados ou armazenamento externo.
 
 ## Estrutura modular
 
