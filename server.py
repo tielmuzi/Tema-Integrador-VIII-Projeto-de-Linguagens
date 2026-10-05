@@ -24,7 +24,7 @@ MIME = {
 }
 
 
-class EscudoDAguaHandler(BaseHTTPRequestHandler):
+class handler(BaseHTTPRequestHandler):
     server_version = "EscudoDAguaDev/1.0"
 
     def send_bytes(self, payload: bytes, content_type: str, status: int = 200) -> None:
@@ -156,7 +156,7 @@ class EscudoDAguaHandler(BaseHTTPRequestHandler):
     def log_message(self, format: str, *args: object) -> None:
         print(f"[web] {self.address_string()} - {format % args}")
 
-handler = EscudoDAguaHandler
+EscudoDAguaHandler = handler
 
 def run() -> None:
     port = 3000
