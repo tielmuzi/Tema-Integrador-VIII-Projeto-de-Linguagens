@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import tempfile
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
@@ -14,7 +16,10 @@ ROOT = Path(__file__).parent.resolve()
 WEB = ROOT / "web"
 EXEMPLOS = ROOT / "exemplos"
 RESUMO = ROOT / "dados" / "resumo_respostas.json"
-STORE = MonitoramentoStore(ROOT / "dados" / "monitoramento.json")
+STORE_PATH = ROOT / "dados" / "monitoramento.json"
+if os.environ.get("VERCEL") == "1":
+    STORE_PATH = Path(tempfile.gettempdir()) / "escudo-dagua" / "monitoramento.json"
+STORE = MonitoramentoStore(STORE_PATH)
 MIME = {
     ".html": "text/html; charset=utf-8",
     ".css": "text/css; charset=utf-8",
@@ -135,7 +140,7 @@ class handler(BaseHTTPRequestHandler):
                 measurement = STORE.simulate_flood(point_id)
                 self.send_json(measurement, 201)
                 return
-            self.send_json(STORE.update_rules(payload.get("rules")))
+            self.send_json(STORE.update_rules(payload.get("rules"))) # type: ignore
         except KeyError as error:
             self.send_json({"error": str(error.args[0])}, 404)
         except (ValueError, json.JSONDecodeError) as error:

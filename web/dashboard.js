@@ -8,7 +8,7 @@ const pageInfo = {
   compilador: ['COMPILADOR DSL', 'Scanner, parser, análise sintática e interpretação em Python.'],
   relatorios: ['RELATÓRIOS', 'Resumo exportável com separação entre pesquisa real e telemetria simulada.'],
 };
-const state = { view: 'dashboard', dashboard: null, examples: [], source: '', result: null, tab: 'saida', riskPreview: null };
+const state = { view: 'dashboard', dashboard: null, examples: [], selectedExample: '', source: '', result: null, tab: 'saida', riskPreview: null };
 
 function esc(value) {
   return String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[char]);
@@ -137,7 +137,7 @@ function riskView() {
 }
 
 function compilerView() {
-  const examples = state.examples.map((example) => `<option value="${esc(example.id)}">${esc(example.name)}</option>`).join('');
+  const examples = state.examples.map((example) => `<option value="${esc(example.id)}" ${state.selectedExample === example.id ? 'selected' : ''}>${esc(example.name)}</option>`).join('');
   const result = state.result;
   let output = '<p class="console-muted">Clique em Validar ou Executar para analisar o programa.</p>';
   if (result) {
@@ -269,6 +269,7 @@ async function handleClick(event) {
     if (action === 'validate-program') return compile(false);
     if (action === 'run-program') return compile(true);
     if (action === 'clear-editor') {
+      state.selectedExample = '';
       state.source = '';
       state.result = null;
       return renderShell();
@@ -347,7 +348,7 @@ root.addEventListener('input', (event) => {
 root.addEventListener('change', async (event) => {
   if (event.target.matches('#exampleSelect') && event.target.value) {
     const example = state.examples.find((item) => item.id === event.target.value);
-    if (example) { state.source = example.source; state.result = null; renderContent(); }
+    if (example) { state.selectedExample = example.id; state.source = example.source; state.result = null; renderContent(); }
   }
 });
 navItems.forEach((item) => item.addEventListener('click', () => setView(item.dataset.view)));

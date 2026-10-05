@@ -309,6 +309,86 @@
       "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
       "executed_at": "2026-10-04T19:52:19-03:00",
       "simulated": true
+    },
+    {
+      "id": "R0009",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 85;\nAREA VilaNova (SENSOR, NIVEL);\nNIVEL VilaNova = 62;\nSENSOR Pluviometro;\nMONITORE Centro;\nMONITORE VilaNova;\nALARME;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] Centro: 85% de risco pluviométrico registrado.",
+        "[ÁREA] VilaNova cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] VilaNova: 62% de risco pluviométrico registrado.",
+        "[SENSOR] Pluviometro conectado ao centro de monitoramento.",
+        "[MONITORAMENTO] Centro: nível 85%. RISCO ALTO — alarme recomendado.",
+        "[MONITORAMENTO] VilaNova: nível 62%. ATENÇÃO — acompanhar evolução.",
+        "[ALARME] Alerta preventivo acionado para sistema."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-05T00:17:22-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0010",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 45;\nMONITORE Centro;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] Centro: 45% de risco pluviométrico registrado.",
+        "[MONITORAMENTO] Centro: nível 45%. NORMAL — sem risco imediato."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-05T00:20:26-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0011",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 45;\nMONITORE Centro;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] Centro: 45% de risco pluviométrico registrado.",
+        "[MONITORAMENTO] Centro: nível 45%. NORMAL — sem risco imediato."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-05T00:30:36-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0012",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nCHUVA Centro;\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro léxico na linha 3, coluna 1: Palavra reservada ou comando desconhecido: 'CHUVA'",
+      "executed_at": "2026-10-05T00:31:57-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0013",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nCHUVA Centro;\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro léxico na linha 3, coluna 1: Palavra reservada ou comando desconhecido: 'CHUVA'",
+      "executed_at": "2026-10-05T00:32:15-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0014",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 70;\nMONITORE Centro\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro sintático na linha 5, coluna 1: Esperado ';' após o comando MONITORE.",
+      "executed_at": "2026-10-05T00:32:58-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0015",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL;\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro sintático na linha 2, coluna 27: Esperado ')' para fechar a declaração da área.",
+      "executed_at": "2026-10-05T00:33:57-03:00",
+      "simulated": true
     }
   ],
   "demo_points_version": 1
