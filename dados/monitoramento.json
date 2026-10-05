@@ -1,0 +1,315 @@
+{
+  "points": [
+    {
+      "id": "P01",
+      "name": "Baixada do Rio",
+      "neighborhood": "Baixada do Rio",
+      "channel": "Córrego Central",
+      "simulated": true
+    },
+    {
+      "id": "P02",
+      "name": "Vila dos Pescadores",
+      "neighborhood": "Vila dos Pescadores",
+      "channel": "Canal Sul",
+      "simulated": true
+    },
+    {
+      "id": "P03",
+      "name": "Centro",
+      "neighborhood": "Centro",
+      "channel": "Rio Principal",
+      "simulated": true
+    },
+    {
+      "id": "P04",
+      "name": "Alto da Serra",
+      "neighborhood": "Alto da Serra",
+      "channel": "Córrego da Serra",
+      "simulated": true
+    },
+    {
+      "id": "P05",
+      "name": "Jardim Esperança",
+      "neighborhood": "Jardim Esperança",
+      "channel": "Canal Leste",
+      "simulated": true
+    },
+    {
+      "id": "P06",
+      "name": "Vila Nova",
+      "neighborhood": "Vila Nova",
+      "channel": "Córrego Novo",
+      "simulated": true
+    },
+    {
+      "id": "P07",
+      "name": "Zona Sul",
+      "neighborhood": "Zona Sul",
+      "channel": "Canal Sul",
+      "simulated": true
+    }
+  ],
+  "measurements": [
+    {
+      "id": "M0001",
+      "point_id": "P01",
+      "rain_mm": 18,
+      "water_cm": 32,
+      "risk": "NORMAL",
+      "measured_at": "2026-10-04T19:07:56.091667-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0002",
+      "point_id": "P02",
+      "rain_mm": 34,
+      "water_cm": 70,
+      "risk": "ATENÇÃO",
+      "measured_at": "2026-10-04T19:19:56.091667-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0003",
+      "point_id": "P01",
+      "rain_mm": 55,
+      "water_cm": 108,
+      "risk": "ALERTA",
+      "measured_at": "2026-10-04T19:31:56.091667-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0004",
+      "point_id": "P02",
+      "rain_mm": 82,
+      "water_cm": 153,
+      "risk": "CRÍTICO",
+      "measured_at": "2026-10-04T19:43:56.091667-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0005",
+      "point_id": "P03",
+      "rain_mm": 8,
+      "water_cm": 25,
+      "risk": "NORMAL",
+      "measured_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0006",
+      "point_id": "P04",
+      "rain_mm": 52,
+      "water_cm": 118,
+      "risk": "ALERTA",
+      "measured_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0007",
+      "point_id": "P05",
+      "rain_mm": 31,
+      "water_cm": 62,
+      "risk": "ATENÇÃO",
+      "measured_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0008",
+      "point_id": "P06",
+      "rain_mm": 12,
+      "water_cm": 40,
+      "risk": "NORMAL",
+      "measured_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0009",
+      "point_id": "P07",
+      "rain_mm": 86,
+      "water_cm": 166,
+      "risk": "CRÍTICO",
+      "measured_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "M0010",
+      "point_id": "P03",
+      "rain_mm": 50,
+      "water_cm": 200,
+      "risk": "CRÍTICO",
+      "measured_at": "2026-10-04T20:19:45.334472-03:00",
+      "simulated": true
+    }
+  ],
+  "alerts": [
+    {
+      "id": "A0003",
+      "point_id": "P01",
+      "point_name": "Baixada do Rio",
+      "risk": "ALERTA",
+      "message": "ALERTA: nível 108 cm e chuva 55 mm.",
+      "created_at": "2026-10-04T19:31:56.091667-03:00",
+      "simulated": true
+    },
+    {
+      "id": "A0004",
+      "point_id": "P02",
+      "point_name": "Vila dos Pescadores",
+      "risk": "CRÍTICO",
+      "message": "CRÍTICO: nível 153 cm e chuva 82 mm.",
+      "created_at": "2026-10-04T19:43:56.091667-03:00",
+      "simulated": true
+    },
+    {
+      "id": "A0006",
+      "point_id": "P04",
+      "point_name": "Alto da Serra",
+      "risk": "ALERTA",
+      "message": "ALERTA: nível 118 cm e chuva 52 mm.",
+      "created_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "A0009",
+      "point_id": "P07",
+      "point_name": "Zona Sul",
+      "risk": "CRÍTICO",
+      "message": "CRÍTICO: nível 166 cm e chuva 86 mm.",
+      "created_at": "2026-10-04T20:18:45.360492-03:00",
+      "simulated": true
+    },
+    {
+      "id": "A0010",
+      "point_id": "P03",
+      "point_name": "Centro",
+      "risk": "CRÍTICO",
+      "message": "CRÍTICO: nível 200 cm e chuva 50 mm.",
+      "created_at": "2026-10-04T20:19:45.334472-03:00",
+      "simulated": true
+    }
+  ],
+  "rules": [
+    {
+      "level": "CRÍTICO",
+      "water_min": 150,
+      "rain_min": 80,
+      "color": "#607d8b"
+    },
+    {
+      "level": "ALERTA",
+      "water_min": 100,
+      "rain_min": 50,
+      "color": "#607d8b"
+    },
+    {
+      "level": "ATENÇÃO",
+      "water_min": 50,
+      "rain_min": 25,
+      "color": "#607d8b"
+    },
+    {
+      "level": "NORMAL",
+      "water_min": 0,
+      "rain_min": 0,
+      "color": "#607d8b"
+    }
+  ],
+  "programs": [
+    {
+      "id": "R0001",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 70;\nMONITORE Centro\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro sintático na linha 5, coluna 1: Esperado ';' após o comando MONITORE.",
+      "executed_at": "2026-10-04T19:50:49-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0002",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 70;\nMONITORE Centro;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] Centro: 70% de risco pluviométrico registrado.",
+        "[MONITORAMENTO] Centro: nível 70%. ATENÇÃO — acompanhar evolução."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-04T19:50:57-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0003",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 45;\nMONITORE Centro;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] Centro: 45% de risco pluviométrico registrado.",
+        "[MONITORAMENTO] Centro: nível 45%. NORMAL — sem risco imediato."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-04T19:51:11-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0004",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nCHUVA Centro;\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro léxico na linha 3, coluna 1: Palavra reservada ou comando desconhecido: 'CHUVA'",
+      "executed_at": "2026-10-04T19:51:25-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0005",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nSENSOR Centro;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[SENSOR] Centro conectado ao centro de monitoramento."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-04T19:51:37-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0006",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nNIVEL Centro = 85;\nAREA VilaNova (SENSOR, NIVEL);\nNIVEL VilaNova = 62;\nSENSOR Pluviometro;\nMONITORE Centro;\nMONITORE VilaNova;\nALARME;\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] Centro: 85% de risco pluviométrico registrado.",
+        "[ÁREA] VilaNova cadastrada com 2 configuração(ões): SENSOR, NIVEL.",
+        "[NÍVEL] VilaNova: 62% de risco pluviométrico registrado.",
+        "[SENSOR] Pluviometro conectado ao centro de monitoramento.",
+        "[MONITORAMENTO] Centro: nível 85%. RISCO ALTO — alarme recomendado.",
+        "[MONITORAMENTO] VilaNova: nível 62%. ATENÇÃO — acompanhar evolução.",
+        "[ALARME] Alerta preventivo acionado para sistema."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-04T19:51:59-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0007",
+      "source": "INICIO\nAREA centro (SENSOR, NIVEL);\nFIM\n",
+      "accepted": false,
+      "output": [],
+      "message": "Erro léxico na linha 2, coluna 6: Caractere ou comando desconhecido: 'c'\nErro léxico na linha 2, coluna 7: Caractere ou comando desconhecido: 'e'\nErro léxico na linha 2, coluna 8: Caractere ou comando desconhecido: 'n'\nErro léxico na linha 2, coluna 9: Caractere ou comando desconhecido: 't'\nErro léx",
+      "executed_at": "2026-10-04T19:52:08-03:00",
+      "simulated": true
+    },
+    {
+      "id": "R0008",
+      "source": "INICIO\nAREA Centro (SENSOR, NIVEL);\nFIM\n",
+      "accepted": true,
+      "output": [
+        "[ÁREA] Centro cadastrada com 2 configuração(ões): SENSOR, NIVEL."
+      ],
+      "message": "Programa aceito pelo Scanner, Parser e Interpretador.",
+      "executed_at": "2026-10-04T19:52:19-03:00",
+      "simulated": true
+    }
+  ],
+  "demo_points_version": 1
+}

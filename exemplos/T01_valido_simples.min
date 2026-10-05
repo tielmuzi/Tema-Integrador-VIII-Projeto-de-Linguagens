@@ -1,0 +1,5 @@
+INICIO
+AREA Centro (SENSOR, NIVEL);
+NIVEL Centro = 45;
+MONITORE Centro;
+FIM

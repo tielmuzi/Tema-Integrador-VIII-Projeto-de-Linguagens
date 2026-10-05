@@ -1,0 +1,7 @@
+{
+  "include": ["src", "scripts"],
+  "executionEnvironments": [
+    {"root": ".", "extraPaths": ["."]}
+  ],
+  "typeCheckingMode": "basic"
+}

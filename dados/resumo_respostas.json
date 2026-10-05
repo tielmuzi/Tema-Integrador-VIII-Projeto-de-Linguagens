@@ -1,0 +1,341 @@
+{
+  "fonte": "respostas_google_forms.csv",
+  "total_respostas": 13,
+  "campos": 12,
+  "regioes": [
+    {
+      "label": "Itaperuna",
+      "count": 5
+    },
+    {
+      "label": "Mato Grosso",
+      "count": 2
+    },
+    {
+      "label": "Bahia",
+      "count": 1
+    },
+    {
+      "label": "Maranhão",
+      "count": 1
+    },
+    {
+      "label": "Pará",
+      "count": 1
+    },
+    {
+      "label": "Itaberaba - Bahia",
+      "count": 1
+    },
+    {
+      "label": "Rio Grande Do Norte",
+      "count": 1
+    },
+    {
+      "label": "Sudeste - RJ",
+      "count": 1
+    }
+  ],
+  "risco": {
+    "medio": 64.6,
+    "distribuicao": [
+      {
+        "label": "alto",
+        "count": 8
+      },
+      {
+        "label": "moderado",
+        "count": 1
+      },
+      {
+        "label": "baixo",
+        "count": 4
+      }
+    ],
+    "alto_percentual": 62
+  },
+  "adocao_sistema": [
+    {
+      "label": "sim",
+      "count": 11
+    },
+    {
+      "label": "nao",
+      "count": 1
+    },
+    {
+      "label": "talvez",
+      "count": 1
+    }
+  ],
+  "sensores": [
+    {
+      "label": "muito importante",
+      "count": 12
+    },
+    {
+      "label": "importante",
+      "count": 1
+    }
+  ],
+  "orientacoes": [
+    {
+      "label": "sim",
+      "count": 11
+    },
+    {
+      "label": "talvez",
+      "count": 2
+    }
+  ],
+  "impactos": [
+    {
+      "label": "ruas intransitaveis",
+      "count": 9
+    },
+    {
+      "label": "risco a seguranca dos moradores",
+      "count": 7
+    },
+    {
+      "label": "entrada de agua nas residencias",
+      "count": 6
+    },
+    {
+      "label": "acumulo de lixo e entupimento de bueiros",
+      "count": 6
+    },
+    {
+      "label": "interrupcao do transporte publico",
+      "count": 5
+    },
+    {
+      "label": "falta de energia eletrica",
+      "count": 5
+    }
+  ],
+  "canais": [
+    {
+      "label": "whatsapp",
+      "count": 9
+    },
+    {
+      "label": "sms",
+      "count": 5
+    },
+    {
+      "label": "redes sociais",
+      "count": 2
+    },
+    {
+      "label": "sirene ou alerta sonoro",
+      "count": 2
+    },
+    {
+      "label": "aplicativo para celular",
+      "count": 2
+    },
+    {
+      "label": "notificacoes em um site",
+      "count": 1
+    }
+  ],
+  "informacoes_alerta": [
+    {
+      "label": "localizacao do risco",
+      "count": 11
+    },
+    {
+      "label": "orientacoes de seguranca",
+      "count": 9
+    },
+    {
+      "label": "previsao de intensidade da chuva",
+      "count": 8
+    },
+    {
+      "label": "rotas alternativas e locais seguros",
+      "count": 8
+    },
+    {
+      "label": "nivel da agua",
+      "count": 7
+    },
+    {
+      "label": "ruas interditadas",
+      "count": 7
+    }
+  ],
+  "perfis": [
+    {
+      "regiao": "Bahia",
+      "risco": 93,
+      "faixa": "alto",
+      "frequencia": "Toda vez que chove forte",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "Redes sociais"
+      ]
+    },
+    {
+      "regiao": "Maranhão",
+      "risco": 39,
+      "faixa": "baixo",
+      "frequencia": "Raramente",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "Redes sociais"
+      ]
+    },
+    {
+      "regiao": "Mato Grosso",
+      "risco": 48,
+      "faixa": "moderado",
+      "frequencia": "Algumas vezes ao ano",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "WhatsApp"
+      ]
+    },
+    {
+      "regiao": "Pará",
+      "risco": 39,
+      "faixa": "baixo",
+      "frequencia": "Raramente",
+      "locais": [
+        "Próximo a rios ou córregos"
+      ],
+      "canais": [
+        "Notificações em um site",
+        "Sirene ou alerta sonoro"
+      ]
+    },
+    {
+      "regiao": "Itaberaba - Bahia",
+      "risco": 80,
+      "faixa": "alto",
+      "frequencia": "Toda vez que chove forte",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "WhatsApp",
+        "SMS"
+      ]
+    },
+    {
+      "regiao": "Rio Grande Do Norte",
+      "risco": 14,
+      "faixa": "baixo",
+      "frequencia": "Nunca",
+      "locais": [
+        "Não alaga"
+      ],
+      "canais": [
+        "WhatsApp",
+        "SMS"
+      ]
+    },
+    {
+      "regiao": "Mato Grosso",
+      "risco": 39,
+      "faixa": "baixo",
+      "frequencia": "Raramente",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "WhatsApp"
+      ]
+    },
+    {
+      "regiao": "Itaperuna",
+      "risco": 72,
+      "faixa": "alto",
+      "frequencia": "Algumas vezes ao ano",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "SMS"
+      ]
+    },
+    {
+      "regiao": "Itaperuna",
+      "risco": 74,
+      "faixa": "alto",
+      "frequencia": "Frequentemente",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "WhatsApp",
+        "Aplicativo para celular"
+      ]
+    },
+    {
+      "regiao": "Sudeste - RJ",
+      "risco": 78,
+      "faixa": "alto",
+      "frequencia": "Algumas vezes ao ano",
+      "locais": [
+        "Próximo a rios ou córregos"
+      ],
+      "canais": [
+        "WhatsApp",
+        "SMS",
+        "Aplicativo para celular"
+      ]
+    },
+    {
+      "regiao": "Itaperuna",
+      "risco": 80,
+      "faixa": "alto",
+      "frequencia": "Algumas vezes ao ano",
+      "locais": [
+        "Várias regiões"
+      ],
+      "canais": [
+        "WhatsApp"
+      ]
+    },
+    {
+      "regiao": "Itaperuna",
+      "risco": 91,
+      "faixa": "alto",
+      "frequencia": "Toda vez que chove forte",
+      "locais": [
+        "Todas as opções acima"
+      ],
+      "canais": [
+        "WhatsApp",
+        "SMS",
+        "Sirene ou alerta sonoro"
+      ]
+    },
+    {
+      "regiao": "Itaperuna",
+      "risco": 93,
+      "faixa": "alto",
+      "frequencia": "Toda vez que chove forte",
+      "locais": [
+        "Ruas e avenidas"
+      ],
+      "canais": [
+        "WhatsApp"
+      ]
+    }
+  ],
+  "evidencias": [
+    "Itaperuna concentra 5 respostas e deve ser priorizada na simulação.",
+    "8 de 13 respostas foram classificadas como risco alto pelo cruzamento entre suscetibilidade e frequência.",
+    "11 respondentes disseram que usariam um sistema digital de monitoramento.",
+    "13 respondentes consideram sensores importantes ou muito importantes."
+  ]
+}

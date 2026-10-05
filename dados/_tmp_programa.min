@@ -1,0 +1,44 @@
+# Programa gerado a partir das respostas do Google Forms
+# O nível é estimado cruzando suscetibilidade, frequência e impactos relatados.
+INICIO
+AREA Bahia (SENSOR, NIVEL);
+NIVEL Bahia = 93;
+AREA Maranhao (SENSOR, NIVEL);
+NIVEL Maranhao = 39;
+AREA MatoGrosso (SENSOR, NIVEL);
+NIVEL MatoGrosso = 48;
+AREA Para (SENSOR, NIVEL);
+NIVEL Para = 39;
+AREA ItaberabaBahia (SENSOR, NIVEL);
+NIVEL ItaberabaBahia = 80;
+AREA RioGrandeDoNorte (SENSOR, NIVEL);
+NIVEL RioGrandeDoNorte = 14;
+AREA MatoGrosso7 (SENSOR, NIVEL);
+NIVEL MatoGrosso7 = 39;
+AREA Itaperuna (SENSOR, NIVEL);
+NIVEL Itaperuna = 72;
+AREA Itaperuna9 (SENSOR, NIVEL);
+NIVEL Itaperuna9 = 74;
+AREA SudesteRj (SENSOR, NIVEL);
+NIVEL SudesteRj = 78;
+AREA Itaperuna11 (SENSOR, NIVEL);
+NIVEL Itaperuna11 = 80;
+AREA Itaperuna12 (SENSOR, NIVEL);
+NIVEL Itaperuna12 = 91;
+AREA Itaperuna13 (SENSOR, NIVEL);
+NIVEL Itaperuna13 = 93;
+MONITORE Bahia;
+MONITORE Maranhao;
+MONITORE MatoGrosso;
+MONITORE Para;
+MONITORE ItaberabaBahia;
+MONITORE RioGrandeDoNorte;
+MONITORE MatoGrosso7;
+MONITORE Itaperuna;
+MONITORE Itaperuna9;
+MONITORE SudesteRj;
+MONITORE Itaperuna11;
+MONITORE Itaperuna12;
+MONITORE Itaperuna13;
+ALARME;
+FIM

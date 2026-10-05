@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Compilador: exemplo válido",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.main",
+      "args": [
+        "${workspaceFolder}/exemplos/T01_valido_simples.min",
+        "--json"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Servidor web",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "server",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Gerar programa a partir do CSV",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "scripts.integracao_forms",
+      "args": [
+        "${workspaceFolder}/dados/respostas_google_forms.csv",
+        "${workspaceFolder}/dados/programa_valido.min"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  ]
+}

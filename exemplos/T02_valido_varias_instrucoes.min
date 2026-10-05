@@ -1,0 +1,10 @@
+INICIO
+AREA Centro (SENSOR, NIVEL);
+NIVEL Centro = 85;
+AREA VilaNova (SENSOR, NIVEL);
+NIVEL VilaNova = 62;
+SENSOR Pluviometro;
+MONITORE Centro;
+MONITORE VilaNova;
+ALARME;
+FIM
